@@ -5,7 +5,7 @@
                 var FuelConsumption = Number(currentRow.querySelector('#FuelConsumption').value);
                 var DistanceVal = Number(currentRow.querySelector('#DistanceVal').value);
                 var FuelVal = Number(currentRow.querySelector('#FuelVal').value);
-                var revenue = 0;
+                var AvailableDistance = 0;
 
                 document.querySelectorAll('numberUsed');
 
@@ -13,17 +13,12 @@
                     if (isNaN(inPackage) || isNaN(price)) {
                         return;
                     }
-                    revenue = price * inPackage;
+                    AvailableDistance = FuelConsumption * DistanceVal*FuelVal;
                 }
-                else {
-                    if (isNaN(numberUsed) || isNaN(price)) {
-                        return;
-                    }
-                    revenue = price * numberUsed;
-                }
-                var value = revenue * 5;
-                currentRow.querySelector("#revenue").innerHTML = revenue;
-                currentRow.querySelector("#value").innerHTML = value;
+
+
+                currentRow.querySelector("#AvailableDistance").innerHTML = AvailableDistance;
+
             });
 
         }

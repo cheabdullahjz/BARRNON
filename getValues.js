@@ -3,7 +3,7 @@
             rows.forEach(function (currentRow) {
 
                 var FuelConsumption = Number(currentRow.querySelector('#FuelConsumption').value);
-                var price = Number(currentRow.querySelector('#price').value);
+                var DistanceVal = Number(currentRow.querySelector('#DistanceVal').value);
                 var inPackage = Number(currentRow.querySelector('#inPackage').value);
                 var revenue = 0;
 

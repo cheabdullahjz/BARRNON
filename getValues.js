@@ -4,7 +4,7 @@
 
                 var FuelConsumption = Number(currentRow.querySelector('#FuelConsumption').value);
                 var DistanceVal = Number(currentRow.querySelector('#DistanceVal').value);
-                var inPackage = Number(currentRow.querySelector('#inPackage').value);
+                var FuelVal = Number(currentRow.querySelector('#FuelVal').value);
                 var revenue = 0;
 
                 document.querySelectorAll('numberUsed');

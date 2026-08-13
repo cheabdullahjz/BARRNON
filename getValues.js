@@ -9,11 +9,7 @@
 
                 document.querySelectorAll('numberUsed');
 
-                if (numberUsed == "") {
-                    if (isNaN(inPackage) || isNaN(price)) {
-                        return;
-                    }
-                    AvailableDistance = FuelConsumption * DistanceVal*FuelVal;
+                AvailableDistance = FuelConsumption * DistanceVal*FuelVal;
                 }
 
 

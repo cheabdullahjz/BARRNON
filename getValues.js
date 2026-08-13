@@ -2,7 +2,7 @@
             var rows = document.querySelectorAll("tr.package-row");
             rows.forEach(function (currentRow) {
 
-                var numberUsed = Number(currentRow.querySelector('#numberUsed').value);
+                var FuelConsumption = Number(currentRow.querySelector('#FuelConsumption').value);
                 var price = Number(currentRow.querySelector('#price').value);
                 var inPackage = Number(currentRow.querySelector('#inPackage').value);
                 var revenue = 0;
